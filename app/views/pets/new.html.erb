@@ -1,0 +1,9 @@
+<%= form_for @pet do |f|%>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :category %>
+  <%= f.select :category, Pet::CATEGORIES %>
+    
+  <%= f.submit %>
+<% end %>

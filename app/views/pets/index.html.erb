@@ -1,0 +1,10 @@
+<!-- index.html.erb -->
+<% @pets.each do |pet| %>
+  <%= link_to pet_path(pet) do %>
+    <%= render "pet", pet: pet %>
+    <%= link_to "Delete pet", pet_path(pet), method: "delete" %>
+  <% end %>
+<% end  %>
+
+
+
